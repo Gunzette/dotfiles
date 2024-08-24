@@ -16,7 +16,7 @@
             "format": "{release}"
         },
         "uptime",
-        "packages",
+        //"packages",
         "shell",
         {
             "type": "display",
@@ -42,6 +42,7 @@
             "type": "memory",
             "format": "{} / {}"
         },
+	"disk",
         "break"//,
         //"colors"
     ]
