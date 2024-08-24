@@ -24,6 +24,9 @@ alias gclone="git clone"	# clone git repo
 alias ghclone="gh repo clone"	# clone github repo
 #TODO: more
 
+# clearscript
+alias clear="clear; fastfetch"
+
 
 ### STARTUP
 
