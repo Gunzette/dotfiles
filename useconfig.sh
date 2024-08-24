@@ -3,13 +3,16 @@
 echo "trying to create backup directory:"
 mkdir ~/.dotfiles.bak
 mkdir ~/.dotfiles.bak/.config
+mkdir ~/.dotfiles.bak/.config/tmux
 
 cp -rfv ~/.config/fish ~/.dotfiles.bak/.config
 cp -rfv ~/.config/starship.toml ~/.dotfiles.bak/.config
 cp -rfv ~/.config/fastfetch ~/.dotfiles.bak/.config
+cp -rfv ~/.config/tmux/tmux.conf ~/.dotfiles.bak/.config/tmux
 
 cp -rfv .config/fish ~/.config
 cp -rfv .config/starship.toml ~/.config
 cp -rfv .config/fastfetch ~/.config
+cp -rfv .config/tmux ~/.config
 
 echo "success"
