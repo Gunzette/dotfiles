@@ -25,9 +25,9 @@
         },
         "de",
         "wm",
-        "wmtheme",
-        "theme",
-        "icons",
+        //"wmtheme",
+        //"theme",
+        //"icons",
         "terminal",
         {
             "type": "terminalfont",
@@ -42,7 +42,7 @@
             "type": "memory",
             "format": "{} / {}"
         },
-        "break",
-        "colors"
+        "break"//,
+        //"colors"
     ]
 }
