@@ -20,6 +20,8 @@ alias grep="grep --color=auto"	# colorized grep
 
 # git
 alias gcommit="git commit -m"	# commit with message
+alias gpush="git push"
+alias gdiff="git diff"
 alias gclone="git clone"	# clone git repo
 alias ghclone="gh repo clone"	# clone github repo
 #TODO: more
