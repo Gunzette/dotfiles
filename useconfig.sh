@@ -7,19 +7,20 @@ mkdir ~/.dotfiles.bak/.config/tmux
 
 echo
 echo "backing up configs"
-cp -rfv ~/.config/fish ~/.dotfiles.bak/.config
-cp -rfv ~/.config/starship.toml ~/.dotfiles.bak/.config
-cp -rfv ~/.config/fastfetch ~/.dotfiles.bak/.config
-cp -rfv ~/.config/tmux/tmux.conf ~/.dotfiles.bak/.config/tmux
-cp -rfv ~/.config/alacritty ~/.dofiles.bak/.config
+cp -rf ~/.config/fish ~/.dotfiles.bak/.config
+cp -rf ~/.config/starship.toml ~/.dotfiles.bak/.config
+cp -rf ~/.config/fastfetch ~/.dotfiles.bak/.config
+cp -rf ~/.config/tmux/tmux.conf ~/.dotfiles.bak/.config/tmux
+cp -rf ~/.config/alacritty ~/.dotfiles.bak/.config
 
 echo
 echo "putting new configs into .config"
-cp -rfv .config/fish ~/.config
-cp -rfv .config/starship.toml ~/.config
-cp -rfv .config/fastfetch ~/.config
-cp -rfv .config/tmux ~/.config
-cp -rfv .config/alacritty ~/.config
+cp -rf .config/fish ~/.config
+cp -rf .config/starship.toml ~/.config
+cp -rf .config/fastfetch ~/.config
+cp -rf .config/tmux ~/.config
+cp -rf .config/alacritty ~/.config
+
 
 echo
 echo "success"

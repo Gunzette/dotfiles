@@ -2,21 +2,33 @@
 # Gunzette's Fish Config
 #
 
-### EXPORTS
+### PATH
+export PATH="$PATH:/home/gunzette/.cargo/bin"
 
+###EXPORTS
 set fish_greeting	# disables fish intro message
-set EDITOR "vim"
-set VISUAL "Kate"	# nothing better installed rn :(
+set EDITOR "nvim"
+set VISUAL "vscodium"	# nothing better installed rn :(
 
-#TODO: manpager
+# manpager
+set -x MANPAGER "nvim +Man!"
 
 #TODO: colors
 
 ### ALIASES
 
+# replacements
+alias vim="nvim"
+
+alias ls="eza -al --color=always --group-directories-first"
+alias lstree="eza -aT --color=always --group-directories-first"
+
 # added flags
 alias df="df -h"	# readable sizes
 alias grep="grep --color=auto"	# colorized grep
+
+# pacman
+alias sysup="sudo pacman -Syyu"
 
 # git
 alias gcommit="git commit -m"	# commit with message
