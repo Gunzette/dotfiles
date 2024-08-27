@@ -1,5 +1,5 @@
 -- based on kickstart.nvim (for more information: https://www.youtube.com/watch?v=m8C0Cq9Uv9o)
--- NOTE: do not use without kickstart
+-- WARN: do not use without kickstart
 
 -- Set <space> as the leader key
 -- See `:help mapleader`
