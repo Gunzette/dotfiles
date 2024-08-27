@@ -20,7 +20,7 @@ set -x MANPAGER "nvim +Man!"
 # replacements
 alias vim="nvim"
 
-alias lsshort="eza -a --group_directories-first"
+alias lsshort="eza -a"
 alias ls="eza -al --color=always --group-directories-first"
 alias lstree="eza -aT --color=always --group-directories-first"
 
