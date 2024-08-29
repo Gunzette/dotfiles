@@ -15,6 +15,8 @@ set -x MANPAGER "nvim +Man!"
 
 #TODO: colors
 
+bind \cy accept-autosuggestion
+
 ### ALIASES
 
 # replacements
