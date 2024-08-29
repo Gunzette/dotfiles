@@ -19,6 +19,7 @@ set -x MANPAGER "nvim +Man!"
 
 # replacements
 alias vim="nvim"
+alias ovim="nvim \$(fzf)"
 
 alias lsshort="eza -a"
 alias ls="eza -al --color=always --group-directories-first"
@@ -36,7 +37,8 @@ alias gcommit="git commit -m"	# commit with message
 alias gpush="git push"
 alias gdiff="git diff"
 alias gclone="git clone"	# clone git repo
-alias ghclone="gh repo clone"	# clone github repo
+alias gpull="git pull"
+alias gstatus="git status"
 #TODO: more
 
 # clearscript
@@ -47,4 +49,5 @@ alias clear="clear && fastfetch"
 
 fastfetch
 
+fzf --fish | source
 starship init fish | source
