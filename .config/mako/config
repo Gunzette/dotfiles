@@ -1,6 +1,9 @@
+font=JetBrainsMono\ Nerd\ Font\ Mono 10
 
-max-history=3
+height=200
 
-font=JetBrainsMono Nerd Font Mono 10
+default-timeout=5000
 
-default-timeout=3
+background-color=#1e1e2e
+text-color=#bac2de
+
