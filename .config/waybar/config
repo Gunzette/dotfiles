@@ -5,16 +5,20 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 24, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 8, // Gaps between modules (4px)
+    "spacing": 0,
     // Choose the order of the modules
+    "margin-top": 2,
+    "margin-bottom": 2,
     "modules-left": [
         // "sway/workspaces",
         // "sway/mode",
         // "sway/scratchpad",
-        "custom/media"
+        // "custom/media"
+        "hyprland/workspaces"
     ],
     "modules-center": [
-        "sway/window"
+    //    "sway/window"
+        "hyprland/window"
     ],
     "modules-right": [
         //"mpd",
@@ -51,6 +55,26 @@
     //         "default": ""
     //     }
     // },
+
+    "hyprland/workspaces": {
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{name}{icon}",
+        "format-icons": {
+            "active": "*",
+            "urgent": "!",
+            "default": ""
+        }
+    },
+
+    "hyprland/window": {
+        "separate-outputs": false,
+        "rewrite": {
+            "(.*) — Mozilla Firefox": "󰖟  $1",
+            "(.*) - fish": "  [$1]"
+        }
+    },
+
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -59,16 +83,6 @@
             "locked": "",
             "unlocked": ""
         }
-    },
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "sway/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
     },
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
@@ -163,7 +177,8 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "{essid} ",
+        // "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
@@ -172,7 +187,7 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
+        "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
