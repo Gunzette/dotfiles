@@ -49,7 +49,7 @@ button:hover {
 
 #workspaces button {
     padding: 0 4px;
-    /* background-color: #000000;
+    /* background: rgba(0, 0, 0, 0.8) transparent black;
     background: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     border-radius: 8px; */
@@ -105,20 +105,27 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    color: #ffffff;
     border-radius: 0px 16px 16px 0px
 }
 
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    color: #ffffff;
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    color: #00ff00;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
 }
 
+#battery.critical:not(.charging) {
+    color: #ff0000;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+}
+
+/*
 @keyframes blink {
     to {
         background-color: #ffffff;
@@ -126,7 +133,7 @@ button:hover {
     }
 }
 
-/* Using steps() instead of linear as a timing function to limit cpu usage */
+Using steps() instead of linear as a timing function to limit cpu usage
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
     color: #ffffff;
@@ -136,37 +143,38 @@ button:hover {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
+*/
 #power-profiles-daemon {
     padding-right: 15px;
 }
 
 #power-profiles-daemon.performance {
-    background-color: #f53c3c;
-    color: #ffffff;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    color: #ff0000;
 }
 
 #power-profiles-daemon.balanced {
-    background-color: #2980b9;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
     color: #ffffff;
 }
 
 #power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
-    color: #000000;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    color: #00ff00;
 }
 
 label:focus {
-    background-color: #000000;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    color: #ffffff;
 }
 
 #memory {
-    background-color: #9b59b6;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    color: #ffffff;
 }
 
 #disk {
@@ -178,22 +186,26 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    color: #ffffff;
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    color: #ffffff;
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    /*background-color: #f1c40f;
+    color: #000000; */
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
     border-radius: 16px 0px 0px 16px;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    color: #ffffff;
 }
 
 /*
@@ -222,7 +234,8 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
+    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    color: #ffffff;
 }
 
 #temperature.critical {
