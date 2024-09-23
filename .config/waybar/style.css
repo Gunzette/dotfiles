@@ -22,6 +22,7 @@ window#waybar.hidden {
 window#waybar #window {
     background-color: rgba(0, 0, 0, 0.8);
     color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.8);
     padding: 0px 16px 0px 16px;
     border-radius: 16px;
 }
@@ -45,6 +46,7 @@ button:hover {
     background: rgba(0, 0, 0, 0.8);
     color: #ffffff;
     padding: 0px 8px 0px 8px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 #workspaces button {
@@ -107,12 +109,17 @@ button:hover {
 #clock {
     background: rgba(0, 0, 0, 0.8) /*transparent black*/;
     color: #ffffff;
-    border-radius: 0px 16px 16px 0px
+    border-radius: 0px 16px 16px 0px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
+    border-right: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 #battery {
     background: rgba(0, 0, 0, 0.8) /*transparent black*/;
     color: #ffffff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 #battery.charging, #battery.plugged {
@@ -145,7 +152,9 @@ Using steps() instead of linear as a timing function to limit cpu usage
 }
 */
 #power-profiles-daemon {
-    padding-right: 15px;
+    padding-right: 8px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 #power-profiles-daemon.performance {
@@ -170,11 +179,15 @@ label:focus {
 #cpu {
     background: rgba(0, 0, 0, 0.8) /*transparent black*/;
     color: #ffffff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 #memory {
     background: rgba(0, 0, 0, 0.8) /*transparent black*/;
     color: #ffffff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 #disk {
@@ -188,6 +201,8 @@ label:focus {
 #network {
     background: rgba(0, 0, 0, 0.8) /*transparent black*/;
     color: #ffffff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 #network.disconnected {
@@ -201,6 +216,9 @@ label:focus {
     color: #ffffff;
     background: rgba(0, 0, 0, 0.8) /*transparent black*/;
     border-radius: 16px 0px 0px 16px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
+    border-left: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 #pulseaudio.muted {
@@ -236,6 +254,8 @@ label:focus {
 #temperature {
     background: rgba(0, 0, 0, 0.8) /*transparent black*/;
     color: #ffffff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 #temperature.critical {
