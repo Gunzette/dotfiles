@@ -46,6 +46,8 @@ alias gstatus="git status"
 # clearscript
 alias clear="clear && fastfetch"
 
+# python wallpaper switcher
+alias wallpyper="python ~/.wallpaper/switcher.py"
 
 ### STARTUP
 
