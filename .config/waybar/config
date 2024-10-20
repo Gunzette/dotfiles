@@ -24,7 +24,7 @@
         //"mpd",
         //"idle_inhibitor",
         "pulseaudio",
-        "network",
+        //"network",
         "power-profiles-daemon",
         "cpu",
         "memory",
