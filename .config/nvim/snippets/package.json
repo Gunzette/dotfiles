@@ -1,0 +1,11 @@
+{
+	"name": "gunzette-snippets",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "go",
+				"path": "./lang/go.json"
+			}
+		]
+	}
+}
