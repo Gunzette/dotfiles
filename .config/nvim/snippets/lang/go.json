@@ -9,6 +9,16 @@
 		"body": "if err != nil {\n\tlog.Fatal(err)\n}$0",
 		"description": "Snippet to log errors"
 	},
+	"enum block": {
+		"prefix": "enum",
+		"body": "type ${1:TYPE} ${2:int}\n\nconst = (\n\t${4:Option} $1 = ${3:iota}\n\t$0\n)",
+		"description": "Simple enum type"
+	},
+	"switch case block": {
+		"prefix": "switch",
+		"body": "switch ${1:VALUE} {\ncase ${2:CASE}:\n\t$0\ndefault:\n\t$3\n}",
+		"description": "Simple switch block with one case and one default"
+	},
 	"if block": {
 		"prefix": "if",
 		"body": "if ${1:condition} {\n\t$0\n}",
