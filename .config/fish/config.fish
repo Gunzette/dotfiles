@@ -3,7 +3,7 @@
 #
 
 ### PATH
-export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.cargo/bin:$HOME/bin"
 
 ###EXPORTS
 set fish_greeting	# disables fish intro message
