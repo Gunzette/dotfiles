@@ -95,10 +95,10 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
 -- TIP: Disable arrow keys in normal mode
--- vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
--- vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
--- vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
--- vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
+vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
+vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
+vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
+vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
@@ -781,6 +781,19 @@ require("lazy").setup({
 
 			-- You can configure highlights by doing something like:
 			vim.cmd.hi("Comment gui=none")
+			vim.cmd.hi("Normal ctermbg=NONE guibg=NONE")
+			vim.cmd.hi("NonText guibg=NONE ctermbg=NONE")
+			vim.cmd.hi("LineNr guibg=NONE ctermbg=NONE")
+			vim.cmd.hi("CursorLine guibg=NONE ctermbg=NONE")
+			vim.cmd.hi("CursorLineNr guibg=NONE ctermbg=NONE")
+
+			-- gitsigns highlights
+			vim.cmd.hi("GitSignsAdd guibg=NONE ctermbg=NONE")
+			vim.cmd.hi("GitSignsChanged guibg=NONE ctermbg=NONE")
+			vim.cmd.hi("GitSignsDelete guibg=NONE ctermbg=NONE")
+			vim.cmd.hi("GitSignsTopdelete guibg=NONE ctermbg=NONE")
+			vim.cmd.hi("GitSignsChangedelete guibg=NONE ctermbg=NONE")
+			vim.cmd.hi("GitSignsUntracked guibg=NONE ctermbg=NONE")
 		end,
 	},
 
