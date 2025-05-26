@@ -40,7 +40,7 @@ def main():
     input_str = input("Number: ")
 
     for i in wallpaper_list:
-        if i[0] in input_str:
+        if i[0] == input_str.strip("\n"):
             selected_file = "_".join(i)
             break
     else:
