@@ -1,9 +1,12 @@
 font=JetBrainsMono\ Nerd\ Font\ Mono 10
 
 height=200
+border-size=4
+border-radius=16
 
 default-timeout=5000
 
 background-color=#1e1e2e
 text-color=#bac2de
+border-color=#a06eb5
 
