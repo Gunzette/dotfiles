@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0);
+	background-color: rgba(0, 0, 0, 0);
     border-bottom: 0px solid rgba(100, 114, 125, 0.5);
     color: #000000;
     transition-property: background-color;
@@ -20,7 +20,7 @@ window#waybar.hidden {
 }
 
 window#waybar #window {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
     border: 4px solid #A06EB5;
     padding: 0px 16px 0px 16px;
@@ -43,7 +43,7 @@ button:hover {
 
 #workspaces {
     border-radius: 16px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
     color: #ffffff;
     padding: 0px 8px 0px 8px;
     border: 4px solid #A06EB5;
@@ -51,7 +51,7 @@ button:hover {
 
 #workspaces button {
     padding: 0 4px;
-    /* background: rgba(0, 0, 0, 0.8) transparent black;
+    /* background: rgba(0, 0, 0, 0.6) transparent black;
     background: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     border-radius: 8px; */
@@ -107,7 +107,7 @@ button:hover {
 }
 
 #clock {
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #ffffff;
     border-radius: 0px 16px 16px 0px;
     border-bottom: 4px solid #A06EB5;
@@ -116,7 +116,7 @@ button:hover {
 }
 
 #battery {
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #ffffff;
     border-bottom: 4px solid #A06EB5;
     border-top: 4px solid #A06EB5;
@@ -124,12 +124,12 @@ button:hover {
 
 #battery.charging, #battery.plugged {
     color: #00ff00;
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
 }
 
 #battery.critical:not(.charging) {
     color: #ff0000;
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
 }
 
 /*
@@ -158,33 +158,33 @@ Using steps() instead of linear as a timing function to limit cpu usage
 }
 
 #power-profiles-daemon.performance {
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #ff0000;
 }
 
 #power-profiles-daemon.balanced {
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #ffffff;
 }
 
 #power-profiles-daemon.power-saver {
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #00ff00;
 }
 
 label:focus {
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
 }
 
 #cpu {
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #ffffff;
     border-bottom: 4px solid #A06EB5;
     border-top: 4px solid #A06EB5;
 }
 
 #memory {
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #ffffff;
     border-bottom: 4px solid #A06EB5;
     border-top: 4px solid #A06EB5;
@@ -199,14 +199,14 @@ label:focus {
 }
 
 #network {
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #ffffff;
     border-bottom: 4px solid #A06EB5;
     border-top: 4px solid #A06EB5;
 }
 
 #network.disconnected {
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #ffffff;
 }
 
@@ -214,7 +214,7 @@ label:focus {
     /*background-color: #f1c40f;
     color: #000000; */
     color: #ffffff;
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     border-radius: 16px 0px 0px 16px;
     border-bottom: 4px solid #A06EB5;
     border-top: 4px solid #A06EB5;
@@ -222,7 +222,7 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #ffffff;
 }
 
@@ -252,7 +252,7 @@ label:focus {
 }
 
 #temperature {
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #ffffff;
     border-bottom: 4px solid #A06EB5;
     border-top: 4px solid #A06EB5;
@@ -263,7 +263,7 @@ label:focus {
 }*/
 
 #tray {
-    background: rgba(0, 0, 0, 0.8) /*transparent black*/;
+    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     border: 4px solid #A06EB5;
     border-radius: 16px;
 }
