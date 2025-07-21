@@ -7,19 +7,21 @@
     // "width": 1280, // Waybar width
     "spacing": 0,
     // Choose the order of the modules
-    "margin-top": 2,
+    "margin-top": 0,
     "margin-bottom": 2,
     "modules-left": [
         // "sway/workspaces",
         // "sway/mode",
         // "sway/scratchpad",
         // "custom/media"
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+		"tray",
+		"hyprland/window"
     ],
-    "modules-center": [
+    //"modules-center": [
     //    "sway/window"
-        "hyprland/window"
-    ],
+    //    "hyprland/window"
+    //],
     "modules-right": [
         //"mpd",
         //"idle_inhibitor",
@@ -34,8 +36,7 @@
         //"sway/language",
         "battery",
         //"battery#bat2",
-        "clock",
-        "tray"
+        "clock"
         //"custom/power"
     ],
     // Modules configuration

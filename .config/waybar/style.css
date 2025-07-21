@@ -9,7 +9,7 @@
 
 window#waybar {
 	background-color: rgba(0, 0, 0, 0);
-    border-bottom: 0px solid rgba(100, 114, 125, 0.5);
+    border-bottom: 0px solid rgba(100, 114, 125, 0.0);
     color: #000000;
     transition-property: background-color;
     transition-duration: .5s;
@@ -20,11 +20,13 @@ window#waybar.hidden {
 }
 
 window#waybar #window {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 1);
     color: #ffffff;
-    border: 4px solid #A06EB5;
-    padding: 0px 16px 0px 16px;
-    border-radius: 16px;
+    border-bottom: 4px solid #ff9a00;
+    border-left: 4px solid #ff9a00;
+    border-right: 4px solid #ff9a00;
+    padding: 0px 8px 0px 8px;
+	margin: 0px 0px 0px 16px;
 }
 
 button {
@@ -42,11 +44,12 @@ button:hover {
 }
 
 #workspaces {
-    border-radius: 16px;
-    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 1);
     color: #ffffff;
-    padding: 0px 8px 0px 8px;
-    border: 4px solid #A06EB5;
+    padding: 0px 4px 0px 4px;
+    border-right: 4px solid #ff9a00;
+    border-bottom: 4px solid #ff9a00;
 }
 
 #workspaces button {
@@ -107,29 +110,24 @@ button:hover {
 }
 
 #clock {
-    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
+    background: rgba(0, 0, 0, 1);
     color: #ffffff;
-    border-radius: 0px 16px 16px 0px;
-    border-bottom: 4px solid #A06EB5;
-    border-top: 4px solid #A06EB5;
-    border-right: 4px solid #A06EB5;
+    border-radius: 0px;
+    border-bottom: 4px solid #00a2ff;
 }
 
 #battery {
-    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
+    background: rgba(0, 0, 0, 1);
     color: #ffffff;
-    border-bottom: 4px solid #A06EB5;
-    border-top: 4px solid #A06EB5;
+    border-bottom: 4px solid #00a2ff;
 }
 
 #battery.charging, #battery.plugged {
     color: #00ff00;
-    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
 }
 
 #battery.critical:not(.charging) {
     color: #ff0000;
-    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
 }
 
 /*
@@ -153,22 +151,19 @@ Using steps() instead of linear as a timing function to limit cpu usage
 */
 #power-profiles-daemon {
     padding-right: 8px;
-    border-bottom: 4px solid #A06EB5;
-    border-top: 4px solid #A06EB5;
+    border-bottom: 4px solid #00a2ff;
+    background: rgba(0, 0, 0, 1);
 }
 
 #power-profiles-daemon.performance {
-    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #ff0000;
 }
 
 #power-profiles-daemon.balanced {
-    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #ffffff;
 }
 
 #power-profiles-daemon.power-saver {
-    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
     color: #00ff00;
 }
 
@@ -177,17 +172,15 @@ label:focus {
 }
 
 #cpu {
-    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
+    background: rgba(0, 0, 0, 1);
     color: #ffffff;
-    border-bottom: 4px solid #A06EB5;
-    border-top: 4px solid #A06EB5;
+    border-bottom: 4px solid #00a2ff;
 }
 
 #memory {
-    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
+    background: rgba(0, 0, 0, 1);
     color: #ffffff;
-    border-bottom: 4px solid #A06EB5;
-    border-top: 4px solid #A06EB5;
+    border-bottom: 4px solid #00a2ff;
 }
 
 #disk {
@@ -214,18 +207,13 @@ label:focus {
     /*background-color: #f1c40f;
     color: #000000; */
     color: #ffffff;
-    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
-    border-radius: 16px 0px 0px 16px;
-    border-bottom: 4px solid #A06EB5;
-    border-top: 4px solid #A06EB5;
-    border-left: 4px solid #A06EB5;
+    background: rgba(0, 0, 0, 1);
+    border-radius: 0px;
+    border-bottom: 4px solid #00a2ff;
+    border-left: 4px solid #00a2ff;
 }
 
-#pulseaudio.muted {
-    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
-    color: #ffffff;
-}
-
+#pulseaudio.muted
 /*
 #wireplumber {
     background-color: #fff0f5;
@@ -252,10 +240,9 @@ label:focus {
 }
 
 #temperature {
-    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
+    background: rgba(0, 0, 0, 1);
     color: #ffffff;
-    border-bottom: 4px solid #A06EB5;
-    border-top: 4px solid #A06EB5;
+    border-bottom: 4px solid #00a2ff;
 }
 
 /*#temperature.critical {
@@ -263,9 +250,11 @@ label:focus {
 }*/
 
 #tray {
-    background: rgba(0, 0, 0, 0.6) /*transparent black*/;
-    border: 4px solid #A06EB5;
-    border-radius: 16px;
+	margin: 0px 0px 0px 12px;
+    background: rgba(0, 0, 0, 1);
+    border-bottom: 4px solid #ff9a00;
+    border-left: 4px solid #ff9a00;
+    border-right: 4px solid #ff9a00;
 }
 
 #tray > .passive {
@@ -274,7 +263,6 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
 }
 
 #idle_inhibitor {
